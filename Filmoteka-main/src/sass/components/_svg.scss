@@ -1,0 +1,41 @@
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.heart {
+  width: 14px;
+  height: 12.88px;
+  animation: heartbeat 1s infinite;
+}
+
+/* Definește cheia de animație */
+@keyframes reverse-scale {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(-1);
+  }
+}
+
+/* Aplică animația elementului cu clasa .logo__svg */
+.logo__svg {
+  animation: reverse-scale 4s infinite;
+}
